@@ -1,0 +1,27 @@
+@import 'utils/fonts';
+@import 'utils/variables';
+
+@import 'libs/bootstrap/bootstrap-reboot';
+@import 'libs/bootstrap/bootstrap-grid';
+
+
+*{
+  font-family: 'Lato', sans-serif;
+}
+
+.container{
+  position: relative;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/questions';
+@import 'blocks/promo';
+@import 'blocks/program';
+@import 'blocks/reasons';
+@import 'blocks/author';
+@import 'blocks/results';
+@import 'blocks/footer';
+
+@import 'utils/media';

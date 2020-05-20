@@ -1,0 +1,80 @@
+.results {
+  padding-top: 102px;
+  padding-bottom: 125px;
+  background: #F4E4F9;
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+
+  &__block {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  }
+  &__info{
+    width: 100%;
+    margin-top: 30px;
+  }
+  &__avatar {
+    width: 58px;
+    height: 55px;
+    object-fit: contain;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 14px;
+    color: $main-color;
+    padding: 0;
+  }
+
+  &__subtitle {
+    max-width: 736px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $main-color;
+    padding: 0;
+    &_transparent{
+      color: transparent;
+    }
+  }
+
+  &__line {
+    height: 1px;
+    background: #714271;
+  }
+
+  &__text {
+    padding: 30px;
+  }
+
+  &__part {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-color;
+    span {
+      font-weight: bold;
+      color: #9A2069;
+    }
+  }
+}
+
+.quotes{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -12px;
+  right: 50px;
+}

@@ -1,0 +1,46 @@
+.reasons {
+  padding-top: 170px;
+  min-height: 620px;
+  background: #FFF8EF;
+  margin-top: 20px;
+  padding-bottom: 42px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: $main-color;
+    margin-top: 70px;
+  }
+  &__content {
+    margin-bottom: 50px;
+  }
+  &__text {
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border-top: 1px solid $secondary-color;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $main-color;
+    padding: 0;
+    padding-top: 15px;
+    margin-top: 40px;
+  }
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: $secondary-color;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}

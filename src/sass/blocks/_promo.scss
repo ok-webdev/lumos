@@ -1,0 +1,13 @@
+.promo {
+  padding: 80px 0;
+  background: url(../img/promo-bg.jpg) center/cover no-repeat;
+
+  &__text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: $secondary-color;
+    margin-bottom: 40px;
+  }
+}

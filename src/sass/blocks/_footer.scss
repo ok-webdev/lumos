@@ -1,0 +1,40 @@
+.footer {
+  min-height: 220px;
+  background: url(../img/footer-bg.jpg) center/cover no-repeat;
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 30px;
+    &_partner{
+      text-align: right;
+    }
+  }
+
+  &__email {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration-line: underline;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__partner {
+    max-width: 100%;
+    p {
+      font-weight: normal;
+      font-size: 14px;
+      text-align: right;
+      color: #BDC8D9;
+      margin: 10px 0;
+    }
+  }
+  &__support{
+    max-width: 100%;
+  }
+}

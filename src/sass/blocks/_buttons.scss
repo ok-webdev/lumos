@@ -1,0 +1,24 @@
+.button {
+  width: 100%;
+  height: 50px;
+  background: $btn-color;
+  border-radius: 35px;
+  border: none;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  margin: 0 15px;
+  &__footer{
+    max-width: 243px;
+    height: 47px;
+    background: #EC2808;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+}

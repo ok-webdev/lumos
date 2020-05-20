@@ -1,0 +1,96 @@
+@media (max-width: 1200px){
+  .program{
+    &__wrapper{
+      position: static;
+      margin-top: 30px;
+    }
+  }
+  .reasons{
+    padding-top: 20px;
+  }
+  .author{
+    &__wrapper{
+      position: static;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .header{
+    &__logo{
+      margin-bottom: 30px;
+    }
+  }
+  .questions{
+    &__text{
+      text-align: center;
+      &-arrowed{
+        &_left{
+          &:before{
+            display: none;
+          }
+        }
+        &_right{
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+    &__img{
+      margin-bottom: -40px;
+      &:nth-child(2){
+        order: -1;
+      }
+    }
+  }
+  .author{
+    &__portrait{
+      padding: 0;
+    }
+    &__title{
+      text-align: center;
+    }
+  }
+  .footer{
+    &__partner{
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .header{
+    background: url(../img/header-bg-mobile.jpg) center/cover no-repeat;
+    &__title{
+      font-size: 40px;
+    }
+  }
+  .button{
+    margin-top: 15px;
+  }
+  input[type="email"]{
+    text-align: center;
+  }
+  .footer{
+    &__title{
+      &_partner{
+        text-align: center;
+      }
+    }
+    &__partner{
+      margin-top: 0;
+      text-align: center;
+      p{
+        margin: 5px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 576px){
+  .footer{
+    &__support{
+      margin: 0 auto;
+    }
+  }
+}
