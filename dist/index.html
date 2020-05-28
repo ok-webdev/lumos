@@ -111,7 +111,7 @@
         </p>
       </div>
       <div class="row justify-content-center">
-        <button class="button col-xl-4 col-lg-5 col-md-6 col-sm-6">Записаться на практикум</button>
+        <button class="button col-xl-4 col-lg-5 col-md-6 col-sm-6 sign-up">Записаться на практикум</button>
       </div>
     </div>
   </section>
@@ -191,7 +191,7 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <button class="button col-xl-4 col-lg-5 col-md-6 col-sm-6">Записаться на практикум</button>
+        <button class="button col-xl-4 col-lg-5 col-md-6 col-sm-6 sign-up">Записаться на практикум</button>
       </div>
     </div>
   </section>
@@ -544,22 +544,22 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> 
         <div class="row justify-content-center">
-          <button class="button col-12">Записаться на практикум</button>
+          <button class="button col-12 sign-up">Записаться на практикум</button>
         </div>
       </div>
   </div></section>
   <!-- /.results -->
   <footer class="footer">
     <div class="container">
-      <div class="d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-column-reverse justify-content-xl-between justify-content-lg-between justify-content-md-around justify-content-sm-center">
-        <div class="footer__support d-flex flex-column justify-content-center">
+      <div class="row justify-content-xl-between justify-content-lg-between justify-content-md-center justify-content-sm-center align-items-baseline flex-sm-column-reverse flex-md-row flex-lg-row flex-xl-row">
+        <div class="footer__support row flex-column col-xl-3 col-lg-4 col-md-5 col-sm-12 justify-content-sm-center">
           <h2 class="footer__title">Служба поддержки</h2>
           <a href="mailto:info@aloriya-sobinova.com" class="footer__email">info@aloriya-sobinova.com</a>
-          <button class="button button__footer">Заказать обратный звонок</button>
+          <button class="button button_footer recall">Заказать обратный звонок</button>
         </div>
-        <div class="footer__contacts">
+        <div class="footer__contacts row flex-column col-xl-3 col-lg-4 col-md-5 col-sm-12 justify-content-sm-center">
           <h2 class="footer__title footer__title_partner">Партнёрская программа</h2>
           <div class="footer__partner">
             <p>ИП Хохлов Олег Геннадиевич</p>
@@ -571,6 +571,29 @@
     </div>
   </footer>
   <!-- /.footer -->
+  <div class="overlay">
+    <div class="modal" id="sign-up">
+      <div class="modal__close">&times;</div>
+      <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
+      <div class="modal__descr">и мы перезвоним вам в течение 10 минут</div>
+      <form class="form form_mt25" action="#">
+        <input name="name" placeholder="Ваше имя" type="text">
+        <input name="phone" placeholder="Ваш телефон" type="tel">
+        <input name="email" placeholder="Ваш Email" type="email">
+        <button class="button button_modal">Записаться</button>
+      </form>
+    </div>
+    <div class="modal modal_recall" id="recall">
+      <div class="modal__close">&times;</div>
+      <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
+      <div class="modal__descr">и мы перезвоним вам в течение 10 минут</div>
+      <form class="form form_mt25" action="#">
+        <input name="phone" placeholder="Ваш телефон" type="tel">
+        <button class="button button_modal recall">Записаться</button>
+      </form>
+    </div>
+  </div>
+  <!-- /.modal -->
   <script src="js/script.js"></script>
 </body>
 
