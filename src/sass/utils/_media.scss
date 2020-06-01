@@ -71,6 +71,11 @@
   input[type="email"]{
     text-align: center;
   }
+  .results{
+    &__subtitle{
+      width: 100%;
+    }
+  }
   .footer{
     &__title{
       &_partner{
@@ -93,4 +98,8 @@
       margin: 0 auto;
     }
   }
+}
+
+@media (max-width: 320px) {
+  
 }

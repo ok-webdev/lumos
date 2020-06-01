@@ -1,4 +1,5 @@
-const overlay = document.querySelector(".overlay"),
+const btn = document.getElementsByTagName('button'),
+  overlay = document.querySelector(".overlay"),
   signUp = document.querySelectorAll(".sign-up"),
   recall = document.querySelector(".recall"),
   closeBtn = document.querySelectorAll(".modal__close"),
@@ -7,7 +8,7 @@ const overlay = document.querySelector(".overlay"),
 
 
 signUp.forEach(function (item) {
-  item.addEventListener("click", function () {
+  item.addEventListener("click", function (event) {
     overlay.style.display = "block";
     modalSignUp.style.display = "flex";
   });
@@ -18,11 +19,19 @@ recall.addEventListener("click", function () {
   modalRecall.style.display = "flex";
 });
 
-closeBtn.forEach(function (item) {
-  item.addEventListener("click", function () {
+
+
+overlay.addEventListener('click', function (event) {
+  if (event.target == overlay || event.target == closeBtn) {
+    closeBtn.forEach(function (item) {
+      item.addEventListener("click", function () {
+        overlay.style.display = "none";
+        modalSignUp.style.display = "none";
+        modalRecall.style.display = "none";
+      });
+    });
     overlay.style.display = "none";
     modalSignUp.style.display = "none";
     modalRecall.style.display = "none";
-  });
+  }
 });
-
