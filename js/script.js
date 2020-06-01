@@ -18,11 +18,17 @@ recall.addEventListener("click", function () {
   modalRecall.style.display = "flex";
 });
 
-closeBtn.forEach(function (item) {
-  item.addEventListener("click", function () {
+overlay.addEventListener('click', function (event) {
+  if (event.target == overlay || event.target == closeBtn) {
+    closeBtn.forEach(function (item) {
+      item.addEventListener("click", function () {
+        overlay.style.display = "none";
+        modalSignUp.style.display = "none";
+        modalRecall.style.display = "none";
+      });
+    });
     overlay.style.display = "none";
     modalSignUp.style.display = "none";
     modalRecall.style.display = "none";
-  });
+  }
 });
-
